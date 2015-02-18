@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>header!</title>
+
+    <link rel="stylesheet" type="text/css" href="">
+
+    <style type="text/css">
+      #green {
+      	width: 300px;
+      	height: 300px;
+        border: 5px solid black;
+      	background-color: white;
+      }
+      #red {
+      	width: 300px;
+      	height: 300px;
+        border: 5px solid black;
+      	background-color: white;
+      }
+    </style>
+</head>
+<body>
+    <!-- HTML goes here -->
+    <div id="green"></div>
+    <button onclick="GreenFunction()">Make green</button>
+		<div id="red"></div>
+    <button onclick="RedFunction()">Make red</button>
+
+     <script type="text/javascript">
+        //javascript code goes here at the bottom to ensure the DOM is loaded...
+    function GreenFunction() {
+    var x = document.getElementById("green").style.backgroundColor = "green";
+  }
+    function RedFunction(){
+    var y = document.getElementById("red").style.backgroundColor = "red";
+    //document.getElementById("demo").innerHTML = x;
+}
+    </script>
+</body>
+</html>
